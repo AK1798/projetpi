@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="1258.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mounira.controller.menu.AdminMenu2Controller">
+    <stylesheets>
+        <URL value="@/css/Style.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane layoutX="269.0" layoutY="29.0" prefHeight="515.0" prefWidth="989.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="541.0" prefWidth="991.0">
+               <children>
+                  <VBox fx:id="ListLayout" layoutX="-8.0" layoutY="14.0" prefHeight="498.0" prefWidth="977.0" spacing="10.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="btnReturnMenu" layoutX="1091.0" layoutY="744.0" mnemonicParsing="false" onAction="#handleReturnMenuAdmin" prefHeight="36.0" prefWidth="147.0" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" text="Retourner au menu">
+         <font>
+            <Font name="Monospaced Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btncreate" layoutX="89.0" layoutY="220.0" mnemonicParsing="false" onAction="#AjouterMenu" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" text="Ajouter" />
+      <ImageView fx:id="imageviewlogo" fitHeight="150.0" fitWidth="153.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;">
+         <image>
+            <Image url="@../../../Ressources/Logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_search" layoutX="29.0" layoutY="287.0" prefHeight="36.0" prefWidth="219.0" promptText="Rechercher Menu" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" />
+   </children>
+</AnchorPane>

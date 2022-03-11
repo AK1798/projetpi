@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP" prefHeight="131.0" prefWidth="970.0" style="-fx-border-color: linear-gradient(to right, #00c6ff, #0072ff);" styleClass="white-backround" stylesheets="@../../../../../../../../AllIntravel/AllInTravel/AllInTravel/AllIntravelfinal/src/allintravelfinal/view/topicManagement.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mounira.controller.sou_Commentaire.ScomController">
+   <children>
+      <Label fx:id="id" layoutX="10.0" layoutY="10.0" textFill="TRANSPARENT" />
+      <JFXButton layoutX="932.0" layoutY="7.0" onAction="#delete" prefHeight="21.0" prefWidth="18.0" text="X" />
+      <JFXTextArea fx:id="text" focusColor="#ffffff00" layoutY="-1.0" nodeOrientation="LEFT_TO_RIGHT" onKeyReleased="#editAction" onMouseClicked="#edit" prefHeight="78.0" prefWidth="569.0" unFocusColor="#ffffff00">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextArea>
+      <Label fx:id="labeldate" layoutX="836.0" layoutY="101.0" prefHeight="25.0" prefWidth="111.0" />
+   </children>
+</AnchorPane>

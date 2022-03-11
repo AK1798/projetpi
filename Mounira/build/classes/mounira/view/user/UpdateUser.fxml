@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mounira.controller.user.UpdateUserController">
+    <children>
+        <TextField fx:id="tfnom" layoutX="82.0" layoutY="67.0" prefHeight="30.0" prefWidth="250.0" promptText="Nom" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <font>
+                <Font name="Monospaced Bold" size="12.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tfprenom" layoutX="82.0" layoutY="116.0" prefHeight="30.0" prefWidth="250.0" promptText="Prenom" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <font>
+                <Font name="Monospaced Bold" size="12.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tfemail" layoutX="82.0" layoutY="166.0" prefHeight="30.0" prefWidth="250.0" promptText="Email" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <font>
+                <Font name="Monospaced Bold" size="12.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="tfpassword" layoutX="82.0" layoutY="216.0" prefHeight="30.0" prefWidth="250.0" promptText="Mot de passe" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <font>
+                <Font name="Monospaced Bold" size="12.0" />
+            </font>
+        </PasswordField>
+        <PasswordField fx:id="tfconfirmpass" layoutX="83.0" layoutY="266.0" prefHeight="30.0" prefWidth="250.0" promptText="Confirmer mot de passe" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <font>
+                <Font name="Monospaced Bold" size="12.0" />
+            </font>
+        </PasswordField>
+        <DatePicker fx:id="date" layoutX="83.0" layoutY="316.0" prefHeight="30.0" prefWidth="250.0" promptText="Date de naissance" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;" />
+        <TextField fx:id="tftelephone" layoutX="82.0" layoutY="366.0" prefHeight="30.0" prefWidth="250.0" promptText="Telephone" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <font>
+                <Font name="Monospaced Bold" size="12.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tfadresse" layoutX="82.0" layoutY="416.0" prefHeight="30.0" prefWidth="250.0" promptText="Adresse" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <font>
+                <Font name="Monospaced Bold" size="12.0" />
+            </font>
+        </TextField>
+        <ComboBox fx:id="cbrole" layoutX="83.0" layoutY="466.0" prefHeight="30.0" prefWidth="250.0" promptText="Role" style="-fx-border-color: #6aa84f; -fx-background-color: #a9a9a9 , white , white;">
+            <effect>
+                <Blend mode="OVERLAY" />
+            </effect>
+        </ComboBox>
+        <Label layoutX="134.0" layoutY="23.0" prefHeight="21.0" prefWidth="144.0" text="Ajouter un utilisateur">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+      <Button fx:id="UpdateUser" layoutX="180.0" layoutY="520.0" mnemonicParsing="false" onAction="#UpdateUser" text="Update" />
+    </children>
+</AnchorPane>

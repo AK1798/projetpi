@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mounira.controller.evenement.UpdateEventController">
+   <children>
+      <DatePicker fx:id="datecb" layoutX="55.0" layoutY="111.0" prefHeight="30.0" prefWidth="250.0" promptText="Date de l'evenement" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" />
+      <ComboBox fx:id="cbnbper" layoutX="55.0" layoutY="161.0" prefHeight="30.0" prefWidth="250.0" promptText="Nombres de personnes" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" />
+      <TextField fx:id="tfnom" layoutX="56.0" layoutY="58.0" prefHeight="30.0" prefWidth="250.0" promptText="Nom de l'evenement" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" />
+      <ComboBox fx:id="cbcatego" layoutX="56.0" layoutY="215.0" prefHeight="30.0" prefWidth="250.0" promptText="Categotie de l'evenement" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" />
+      <TextField fx:id="tfdescrip" layoutX="56.0" layoutY="265.0" prefHeight="30.0" prefWidth="250.0" promptText="Description" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" />
+      <Button fx:id="btnupdate" layoutX="130.0" layoutY="340.0" mnemonicParsing="false" onAction="#UpdateEvent" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #a9a9a9 , white , white; -fx-border-color: #6aa84f;" text="modifier" />
+   </children>
+</AnchorPane>

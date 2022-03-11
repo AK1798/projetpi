@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="491.0" styleClass="white-backround" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mounira.controller.commentaire.ModifierCommentaireController">
+   <stylesheets>
+      <URL value="@../../../../../../../../AllIntravel/AllInTravel/AllInTravel/AllIntravelfinal/src/allintravelfinal/view/topicManagement.css" />
+   </stylesheets>
+   <children>
+      <VBox layoutX="1.0" prefHeight="366.0" prefWidth="509.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="384.0" styleClass="text-layount" text="Modifier Commentaire">
+               <opaqueInsets>
+                  <Insets bottom="10.0" top="20.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color blue="0.18969298899173737" green="0.21562500298023224" red="0.2368421107530594" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color blue="0.021320663392543793" green="0.8460749387741089" red="0.9210526347160339" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets left="55.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="inputcont" prefHeight="86.0" prefWidth="509.0">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="24.0" left="20.0" right="20.0" top="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="98.0" prefWidth="509.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="443.0">
+               <children>
+                  <JFXButton fx:id="updatebtn" onMouseClicked="#save" prefHeight="47.0" prefWidth="125.0" styleClass="btn" stylesheets="@../../../../../../../../AllIntravel/AllInTravel/AllInTravel/AllIntravelfinal/src/allintravelfinal/view/topicManagement.css" text="Save">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#clean" prefHeight="47.0" prefWidth="166.0" style="-fx-background-color: #E57E70;" styleClass="btn" text="Clean">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="110.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

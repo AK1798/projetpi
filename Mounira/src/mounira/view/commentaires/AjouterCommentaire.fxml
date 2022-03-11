@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="533.0" styleClass="white-backround" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mounira.controller.commentaire.AjouterCommentaireController">
+   <stylesheets>
+      <URL value="@../../../../../../../../AllIntravel/AllInTravel/AllInTravel/AllIntravelfinal/src/allintravelfinal/view/topicManagement.css" />
+   </stylesheets>
+   <children>
+      <HBox alignment="CENTER" layoutX="90.0" layoutY="324.0" prefHeight="62.0" prefWidth="384.0">
+         <children>
+            <JFXButton fx:id="addbtn" onMouseClicked="#save" prefHeight="45.0" prefWidth="160.0" styleClass="btn" stylesheets="@../../../../../../../../AllIntravel/AllInTravel/AllInTravel/AllIntravelfinal/src/allintravelfinal/view/topicManagement.css" text="Ajouter">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onMouseClicked="#clean" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #E57E70;" styleClass="btn" stylesheets="@../../../../../../../../AllIntravel/AllInTravel/AllInTravel/AllIntravelfinal/src/allintravelfinal/view/topicManagement.css" text="Clean">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="82.0" layoutY="32.0" prefHeight="39.0" prefWidth="384.0" styleClass="text-layount" text="Ajouter Commentaire">
+         <opaqueInsets>
+            <Insets bottom="10.0" top="20.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="Arial" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.18969298899173737" green="0.21562500298023224" red="0.2368421107530594" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.021320663392543793" green="0.8460749387741089" red="0.9210526347160339" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="inputcont" layoutX="1.0" layoutY="107.0" prefHeight="71.0" prefWidth="546.0">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
